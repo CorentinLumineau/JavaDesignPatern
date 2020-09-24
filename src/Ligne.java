@@ -3,19 +3,15 @@ public class Ligne extends Item {
     private Point p2;
 
     public Ligne(Point p1, Point p2, Rectangle container) {
-        super.setContainer(container);
+        super(container.getP1(), container.getP2(), container.getP3(), container.getP4());
         this.p1 = p1;
         this.p2 = p2;
     }
 
     public void moveTo(int translationX, int translationY) {
-        super.getContainer().moveTo(translationX, translationY);
-
-        this.p1.setX(this.p1.getX() + translationX);
-        this.p1.setY(this.p1.getY() + translationY);
-
-        this.p2.setX(this.p2.getX() + translationX);
-        this.p2.setY(this.p2.getY() + translationY);
+        super.moveTo(translationX, translationY);
+        this.p1.moveTo(translationX, translationY);
+        this.p2.moveTo(translationX, translationY);
     }
 
     public String toString() {

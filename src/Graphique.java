@@ -14,6 +14,7 @@ public class Graphique {
     }
 
     public void moveTo(int translationX, int translationY) {
+        //We don't move global graphic but all items inside
         for(Item i : items) {
             i.moveTo(translationX, translationY);
         }
@@ -25,9 +26,9 @@ public class Graphique {
 
     @Override
     public String toString() {
-        return "Graphique{" +
-                "\n - Rectangle =" + graphique +
-                "\n - Lignes =" + items +
+        return "Graphique {" +
+                "\n"+ graphique +
+                "\n - Items =" + items +
                 '}';
     }
 }
