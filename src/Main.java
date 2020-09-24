@@ -11,8 +11,13 @@ public class Main {
         Image img = new Image("freuighq5g151e8rg1e", imgContainer);
         g.addItem(img);
 
-        System.out.println(g.toString());
+        Rectangle ligneContainer = new Rectangle(new Point(14, 6), new Point(16, 6), new Point(16, 9), new Point(14, 9));
+        Ligne l1 = new Ligne(new Point(15,6), new Point(15,8), ligneContainer);
+        img.addItem(l1);
+        System.out.println(g);
+        System.out.println("------------------------------------");
         g.moveTo(2,3);
         System.out.println(g.toString());
+
     }
 }
