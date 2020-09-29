@@ -8,11 +8,7 @@ public class Rectangle extends Item {
 
     @Override
     public String toString() {
-        return "\nfr.uga.miage.graphic.main.Rectangle{" +
-                "\n -" + super.getP1() +
-                "\n -" + super.getP2() +
-                "\n -" + super.getP3() +
-                "\n -" + super.getP4() +
-                "\n}";
+        return "Rectangle :" +
+                "\n\t- Position = " + super.getP1() + " " + super.getP2() + " " + super.getP3() + " " + super.getP4();
     }
 }

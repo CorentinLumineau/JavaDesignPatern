@@ -30,7 +30,6 @@ public class Graphique {
     public String toString() {
         return "fr.uga.miage.graphic.main.Graphique {" +
                 "\n"+ graphique +
-                "\n - Items =" + items +
-                '}';
+                "\n\t- Items = " + items;
     }
 }
