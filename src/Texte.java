@@ -16,14 +16,9 @@ public class Texte extends Item {
 
     @Override
     public String toString() {
-        return "Texte {" +
-                "Container {" +
-                "\n -" + super.getP1() +
-                "\n -" + super.getP2() +
-                "\n -" + super.getP3() +
-                "\n -" + super.getP4() +
-                "\n -Texte ='" + texte +
-                '}';
+        return "\nTexte : " +
+                "\n\t- Position = " + super.getP1() + " " + super.getP2() + " " + super.getP3() + " " + super.getP4() +
+                "\n\t- Texte = "+ '"' + texte + '"';
     }
 }
 

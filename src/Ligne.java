@@ -15,10 +15,8 @@ public class Ligne extends Item {
     }
 
     public String toString() {
-        return "Ligne{" +
-                "\n -" +  p1 +
-                "\n -" + p2 +
-                "\n}";
+        return "\nLigne =" +
+                "\n\t Position : " +  p1 + p2;
     }
 
     public void setP1(Point p1) {

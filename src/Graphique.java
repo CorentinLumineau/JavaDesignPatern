@@ -28,7 +28,6 @@ public class Graphique {
     public String toString() {
         return "Graphique {" +
                 "\n"+ graphique +
-                "\n - Items =" + items +
-                '}';
+                "\n\t- Items = " + items;
     }
 }

@@ -32,15 +32,10 @@ public class Image extends Item{
 
     @Override
     public String toString() {
-        return "Image {" +
-                "Container {" +
-                "\n -" + super.getP1() +
-                "\n -" + super.getP2() +
-                "\n -" + super.getP3() +
-                "\n -" + super.getP4() +
-                "\n -Image ='" + uri +
-                "\n -Contenu ='" + items +
-                '}';
+        return "\nImage :" +
+                "\n\t- Position = " + super.getP1() + " " + super.getP2() + " " + super.getP3() + " " + super.getP4() +
+                "\n\t- Image = " + uri +
+                "\n\t- Contenu = " + items;
     }
 }
 
