@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 public class Texte extends Item {
     private String texte;
 
@@ -16,13 +18,13 @@ public class Texte extends Item {
 
     @Override
     public String toString() {
-        return "Texte {" +
+        return "fr.uga.miage.graphic.main.Texte {" +
                 "Container {" +
                 "\n -" + super.getP1() +
                 "\n -" + super.getP2() +
                 "\n -" + super.getP3() +
                 "\n -" + super.getP4() +
-                "\n -Texte ='" + texte +
+                "\n -fr.uga.miage.graphic.main.Texte ='" + texte +
                 '}';
     }
 }

@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 public class Rectangle extends Item {
 
     public Rectangle(Point p1, Point p2, Point p3, Point p4) {
@@ -6,7 +8,7 @@ public class Rectangle extends Item {
 
     @Override
     public String toString() {
-        return "\nRectangle{" +
+        return "\nfr.uga.miage.graphic.main.Rectangle{" +
                 "\n -" + super.getP1() +
                 "\n -" + super.getP2() +
                 "\n -" + super.getP3() +

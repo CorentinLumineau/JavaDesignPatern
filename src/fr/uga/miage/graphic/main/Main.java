@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 public class Main {
     public static void main(String[] args) {
         Rectangle r = new Rectangle(new Point(10, 10), new Point(20, 10), new Point(20, 5), new Point(10, 5));

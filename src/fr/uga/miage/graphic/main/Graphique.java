@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 import java.util.ArrayList;
 
 public class Graphique {
@@ -26,7 +28,7 @@ public class Graphique {
 
     @Override
     public String toString() {
-        return "Graphique {" +
+        return "fr.uga.miage.graphic.main.Graphique {" +
                 "\n"+ graphique +
                 "\n - Items =" + items +
                 '}';

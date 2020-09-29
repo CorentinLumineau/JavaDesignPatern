@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 public abstract class Item {
     private Point p1;
     private Point p2;

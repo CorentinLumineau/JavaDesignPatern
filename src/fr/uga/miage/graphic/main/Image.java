@@ -1,6 +1,8 @@
+package fr.uga.miage.graphic.main;
+
 import java.util.ArrayList;
 
-public class Image extends Item{
+public class Image extends Item {
     private String uri;
     private ArrayList<Item> items;
 
@@ -32,13 +34,13 @@ public class Image extends Item{
 
     @Override
     public String toString() {
-        return "Image {" +
+        return "fr.uga.miage.graphic.main.Image {" +
                 "Container {" +
                 "\n -" + super.getP1() +
                 "\n -" + super.getP2() +
                 "\n -" + super.getP3() +
                 "\n -" + super.getP4() +
-                "\n -Image ='" + uri +
+                "\n -fr.uga.miage.graphic.main.Image ='" + uri +
                 "\n -Contenu ='" + items +
                 '}';
     }

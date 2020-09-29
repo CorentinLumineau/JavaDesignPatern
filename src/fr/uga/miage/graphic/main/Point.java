@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 public class Point {
     private int x;
     private int y;

@@ -1,3 +1,5 @@
+package fr.uga.miage.graphic.main;
+
 public class Ligne extends Item {
     private Point p1;
     private Point p2;
@@ -15,7 +17,7 @@ public class Ligne extends Item {
     }
 
     public String toString() {
-        return "Ligne{" +
+        return "fr.uga.miage.graphic.main.Ligne{" +
                 "\n -" +  p1 +
                 "\n -" + p2 +
                 "\n}";
