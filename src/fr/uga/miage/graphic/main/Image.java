@@ -28,6 +28,10 @@ public class Image extends Item {
         return uri;
     }
 
+    public ArrayList<Item> getItems(){
+        return items;
+    }
+
     public void setUri(String uri) {
         this.uri = uri;
     }
