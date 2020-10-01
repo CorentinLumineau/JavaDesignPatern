@@ -1,31 +1,39 @@
 package fr.uga.miage.graphic.main;
 
 public class Ligne extends Item {
-    private Point p1;
-    private Point p2;
+    private Point startPoint;
+    private Point endPoint;
 
     public Ligne(Point p1, Point p2, Rectangle container) {
         super(container.getP1(), container.getP2(), container.getP3(), container.getP4());
-        this.p1 = p1;
-        this.p2 = p2;
+        this.startPoint = p1;
+        this.endPoint = p2;
     }
 
     public void moveTo(int translationX, int translationY) {
         super.moveTo(translationX, translationY);
-        this.p1.moveTo(translationX, translationY);
-        this.p2.moveTo(translationX, translationY);
+        this.startPoint.moveTo(translationX, translationY);
+        this.endPoint.moveTo(translationX, translationY);
     }
 
     public String toString() {
         return "\nLigne =" +
-                "\n\t Position : " +  p1 + p2;
+                "\n\t Position : " + startPoint + endPoint;
     }
 
     public void setP1(Point p1) {
-        this.p1 = p1;
+        this.startPoint = p1;
     }
 
-    public void setP2(Point p2) {
-        this.p2 = p2;
+    public void setEndPoint(Point endPoint) {
+        this.endPoint = endPoint;
+    }
+
+    public Point getStartPoint() {
+        return startPoint;
+    }
+
+    public Point getEndPoint() {
+        return endPoint;
     }
 }

@@ -16,6 +16,15 @@ class TexteTest {
     }
 
     @Test
+    public void testSetText() {
+        String textContent = "Hello";
+        Rectangle container = new Rectangle(new Point(10,10), new Point(10,20), new Point(20,20), new Point(20,10));
+        Texte text = new Texte(textContent, container);
+        text.setTexte("Bonjour");
+        Assertions.assertEquals("Bonjour", text.getTexte());
+    }
+
+    @Test
     public void testMoveText() {
         String textContent = "Hello";
         Rectangle container = new Rectangle(new Point(10,10), new Point(10,20), new Point(20,20), new Point(20,10));

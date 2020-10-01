@@ -26,6 +26,10 @@ public class Graphique {
         return graphique;
     }
 
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
     @Override
     public String toString() {
         return "fr.uga.miage.graphic.main.Graphique {" +

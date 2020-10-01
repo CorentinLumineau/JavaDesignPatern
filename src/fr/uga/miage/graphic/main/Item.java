@@ -26,8 +26,8 @@ public abstract class Item {
         return p2;
     }
 
-    public void setP2(Point p2) {
-        this.p2 = p2;
+    public void setEndPoint(Point endPoint) {
+        this.p2 = endPoint;
     }
 
     public Point getP3() {
